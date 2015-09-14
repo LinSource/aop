@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5730BDE4-9BC9-4D9C-B0A4-34E30B5D2E46</string>
+	<key>IDESourceControlProjectName</key>
+	<string>framework</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>268A8C081D847A4D7AC36C1C4FB3828DF3F7F9E8</key>
+		<string>https://github.com/LinSource/aop.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>framework.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>268A8C081D847A4D7AC36C1C4FB3828DF3F7F9E8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LinSource/aop.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>268A8C081D847A4D7AC36C1C4FB3828DF3F7F9E8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>268A8C081D847A4D7AC36C1C4FB3828DF3F7F9E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>aop</string>
+		</dict>
+	</array>
+</dict>
+</plist>
