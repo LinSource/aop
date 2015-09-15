@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "User.h"
 #import "FBKVOController.h"
+//#import "ReactiveCocoa.h"
 
 @interface LoginViewController ()
 @property (weak,nonatomic) UIButton *button;/**< 改值按钮*/
@@ -39,10 +40,14 @@
     __weak LoginViewController *weakSelf = self;
     self.fbKVO = [FBKVOController controllerWithObserver:self];
     [self.fbKVO observe:self.user keyPath:@"username" options:NSKeyValueObservingOptionNew block:^(id observer, id object, NSDictionary *change) {
-//        NSLog(@"值变化%@",change[NSKeyValueChangeNewKey]);// 打印监听到值变化
         weakSelf.title = [NSString stringWithFormat:@"改变后:%@",change[NSKeyValueChangeNewKey]];
         
     }];
+
+//    ReactiveCocoa 方式监听
+//    [RACObserve(self.user, username) subscribeNext:^(NSString *username) {
+//        NSLog(@"-RAC -%@",username);
+//    }];
     
     UIButton *pushBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [pushBtn setBackgroundColor:[UIColor blueColor]];
@@ -90,7 +95,6 @@
  *  销毁方法
  */
 -(void)dealloc {
-    NSLog(@"-----");
 //    [self.fbKVO unobserve:self.user keyPath:@"username"];//单个移除监听
     [self.fbKVO unobserveAll];//释放所有监听
 }
