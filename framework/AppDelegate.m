@@ -19,8 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     LoginViewController *loginVC = [LoginViewController new];
+    UINavigationController *c = [[UINavigationController alloc] initWithRootViewController:loginVC];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = loginVC;
+    self.window.rootViewController = c;
     [self.window makeKeyAndVisible];
     return YES;
 }

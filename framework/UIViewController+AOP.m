@@ -23,6 +23,7 @@
         // Class class = object_getClass((id)self);
         swizzleMethod(class, @selector(viewDidLoad), @selector(aop_viewDidLoad));
         swizzleMethod(class, @selector(viewWillAppear:), @selector(aop_viewWillAppear:));
+
     });
 }
 /**
@@ -50,7 +51,7 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector) {
     [self aop_viewDidLoad];
     // 可以判断self的类型  根据类型执行不同的拦截
     if ([self isKindOfClass:[UIViewController class]]) {
-        NSLog(@"aop_viewDidLoad-%@",[self class]);
+        NSLog(@"aop_viewDidLoad-%@",NSStringFromClass([self class]));
     } else {
         NSLog(@"aop_viewDidLoad - other");
     }
