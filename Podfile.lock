@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - IQKeyboardManager (3.2.4)
+  - KVOController (1.0.3)
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
   - MJExtension (2.5.5)
@@ -37,6 +38,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - IQKeyboardManager
+  - KVOController
   - Masonry
   - MBProgressHUD
   - MJExtension
@@ -46,6 +48,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: fa526531d00a7c88771bf72e626bb49fb9292b9c
